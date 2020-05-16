@@ -1,5 +1,14 @@
 #Requires -RunAsAdministrator
 
+Function Uninstall-AppxPackage {
+    Param (
+        [Parameter(Mandatory=$true)][string] $Package
+    )
+
+    Write-Host "[Appx] Uninstall $Package.." -f Yellow
+    Get-AppxPackage $Package | Remove-AppxPackage
+}
+
 Function Choco-Install {
     Param (
         [Parameter(Mandatory=$true)][string] $Package,
@@ -30,6 +39,31 @@ Function PSGallery-Install {
         Write-Host "[PS] Install $Package.." -f Cyan
         Install-Module $Package -Scope CurrentUser -Repository PSGallery
     }
+}
+
+# ---- Remove Built-in applications ----
+$Apps = @(
+    "*3dbuilder*",           # 3D Builder
+    "*windowscamera*"        # Camera
+    "*officehub*",           # Get Office
+    "*skypeapp*",            # Get Skype
+    "*getstarted*",          # Get Started
+    "*windowsmaps*",         # Maps
+    "*solitairecollection*", # Microsoft Solitaire Collection
+    "*bingfinance*",         # Money
+    "*zunevideo*",           # Movies & TV
+    "*bingnews*",            # News
+    "*onenote*",             # OneNote
+    "*people*",              # People
+    "*windowsphone*",        # Phone Companion
+    "*photos*",              # Photos
+    "*bingsports*",          # Sports
+    "*bingweather*",         # Weather
+    "*xboxapp*"              # Xbox
+)
+
+ForEach ($App in $Apps) {
+    Uninstall-AppxPackage $App
 }
 
 # ---- Explorer ----
