@@ -65,3 +65,22 @@ HKCU:Console
 - [steam](https://chocolatey.org/packages/steam)
 - [microsoft-teams](https://chocolatey.org/packages/microsoft)
 - [zoom](https://chocolatey.org/packages/zoom)
+
+# Uninstallation list
+- 3D Builder
+- Camera
+- Get Office
+- Get Skype
+- Get Started
+- Maps
+- Microsoft Solitaire Collection
+- Money
+- Movies & TV
+- News
+- OneNote
+- People
+- Phone Companion
+- Photos
+- Sports
+- Weather
+- Xbox
