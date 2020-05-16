@@ -78,6 +78,7 @@ HKCU:Console
 
 # Uninstallation list
 - 3D Builder
+- 3D Viewer
 - Camera
 - Get Office
 - Get Skype

@@ -50,6 +50,7 @@ Function PSGallery-Install {
 # ---- Remove Built-in applications ----
 $Apps = @(
     "*3dbuilder*",           # 3D Builder
+    "*3dviewer*",            # 3D Viewer
     "*windowscamera*"        # Camera
     "*officehub*",           # Get Office
     "*skypeapp*",            # Get Skype
