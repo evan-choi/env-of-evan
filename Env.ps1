@@ -137,6 +137,9 @@ Choco-Install docker-desktop
 ## GoodbyeDPI
 Choco-Install goodbyedpi
 
+## Teamviewer
+Choco-Install teamviewer
+
 ## PotPlayer
 Choco-Install potplayer
 
