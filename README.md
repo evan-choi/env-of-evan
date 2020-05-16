@@ -49,32 +49,33 @@ HKCU:Console
 ## Chocolatey
 
 ### PowerShell
-- [colortool](https://chocolatey.org/packages/colortool)
-- [d2codingfont](https://chocolatey.org/packages/d2codingfont)
+- [ColorTool](https://chocolatey.org/packages/colortool)
+- [D2Codingfont](https://chocolatey.org/packages/d2codingfont)
 
 ### Default tools
-- [googlechrome](https://chocolatey.org/packages/googlechrome)
-- [bandizip](https://chocolatey.org/packages/bandizip)
+- [Google Chrome](https://chocolatey.org/packages/googlechrome)
+- [BandiZip](https://chocolatey.org/packages/bandizip)
 
 ### Developer tools
 - [git](https://chocolatey.org/packages/git)
-- [gitkraken](https://chocolatey.org/packages/gitkraken)
-- [dotnetcore-sdk](https://chocolatey.org/packages/dotnetcore-sdk) 3.1
-- [jetbrains-rider](https://chocolatey.org/packages/jetbrains-rider/2020.1.2) 2020.1.2
-- [datagrip](https://chocolatey.org/packages/datagrip)
-- [dotpeek](https://chocolatey.org/packages/dotpeek)
-- [vscode](https://chocolatey.org/packages/vscode)
-- [docker-desktop](https://chocolatey.org/packages/docker)
+- [GitKraken](https://chocolatey.org/packages/gitkraken)
+- [.NET Core SDK](https://chocolatey.org/packages/dotnetcore-sdk)
+- [Jetbrains Rider](https://chocolatey.org/packages/jetbrains-rider)
+- [Jetbrains DataGrip](https://chocolatey.org/packages/datagrip)
+- [Jetbrains DotPeek](https://chocolatey.org/packages/dotpeek)
+- [VisualStudio Code](https://chocolatey.org/packages/vscode)
+- [Docker Desktop](https://chocolatey.org/packages/docker)
 
 ### Other tools
-- [goodbyedpi](https://chocolatey.org/packages/goodbyedpi)
-- [teamviewer](https://chocolatey.org/packages/teamviewer)
-- [potplayer](https://chocolatey.org/packages/potplayer)
-- [sharex](https://chocolatey.org/packages/sharex)
-- [qbittorrent](https://chocolatey.org/packages/qbittorrent)
-- [steam](https://chocolatey.org/packages/steam)
-- [microsoft-teams](https://chocolatey.org/packages/microsoft)
-- [zoom](https://chocolatey.org/packages/zoom)
+- [GoodbyeDPI](https://chocolatey.org/packages/goodbyedpi)
+- [Teamviewer](https://chocolatey.org/packages/teamviewer)
+- [Everything](https://chocolatey.org/packages/everything)
+- [PotPlayer](https://chocolatey.org/packages/potplayer)
+- [ShareX](https://chocolatey.org/packages/sharex)
+- [qBittorrent](https://chocolatey.org/packages/qbittorrent)
+- [Steam](https://chocolatey.org/packages/steam)
+- [Microsoft Teams](https://chocolatey.org/packages/microsoft)
+- [Zoom](https://chocolatey.org/packages/zoom)
 
 # Uninstallation list
 - 3D Builder

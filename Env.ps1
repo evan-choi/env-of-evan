@@ -87,6 +87,9 @@ Set-ItemProperty $Key HideFileExt 0 # 보기 > 알려진 파일 형식의 파일
 $Key = "HKCU:SOFTWARE\Microsoft\Windows\CurrentVersion\Search"
 Set-ItemProperty $Key SearchboxTaskbarMode 0 # 작업 표시줄 > 검색 > 숨김
 
+# ---- Restart Explorer ----
+Stop-Process -processName: Explorer
+
 # ---- Install Chocolatey ----
 if ($choco = Get-Command choco -ErrorAction SilentlyContinue) {
     Write-Host "Chocolatey is already installed."
@@ -119,7 +122,7 @@ Add-Content -Path $PsProfile -Value "Set-Theme Agnoster"
 Choco-Install googlechrome
 
 ## Bandizip
-Choco-Install bandizip 7.03
+Choco-Install bandizip
 
 # ---- Developer tools ----
 
@@ -129,11 +132,11 @@ Choco-Install git
 ## GitKraken
 Choco-Install gitkraken
 
-## .NET Core 3.1 SDK
-Choco-Install dotnetcore-sdk 3.1
+## .NET Core SDK
+Choco-Install dotnetcore-sdk
 
 ## Jetbrains
-Choco-Install jetbrains-rider 2020.1.2
+Choco-Install jetbrains-rider
 Choco-Install datagrip
 Choco-Install dotpeek
 
@@ -150,6 +153,9 @@ Choco-Install goodbyedpi
 
 ## Teamviewer
 Choco-Install teamviewer
+
+## Everything
+Choco-Install everything
 
 ## PotPlayer
 Choco-Install potplayer
