@@ -1,6 +1,6 @@
 #Requires -RunAsAdministrator
 
-Function Uninstall-AppxPackage {
+Function AppxPackage-Uninstall {
     Param (
         [Parameter(Mandatory=$true)][string] $Package
     )
@@ -63,7 +63,7 @@ $Apps = @(
 )
 
 ForEach ($App in $Apps) {
-    Uninstall-AppxPackage $App
+    AppxPackage-Uninstall $App
 }
 
 # ---- Explorer ----
