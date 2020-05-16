@@ -134,6 +134,9 @@ Choco-Install docker-desktop
 
 # ---- Other tools ----
 
+## GoodbyeDPI
+Choco-Install goodbyedpi
+
 ## PotPlayer
 Choco-Install potplayer
 
