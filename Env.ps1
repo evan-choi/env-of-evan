@@ -71,16 +71,20 @@ $Apps = @(
 ForEach ($App in $Apps) {
     AppxPackage-Uninstall $App
 }
-exit
+
 # ---- Explorer ----
+$Key = "HKCU:Software\Microsoft\Windows\CurrentVersion\Explorer"
+Set-ItemProperty $Key ShowRecent   0 # ì¼ë°˜ > ê°œì¸ ì •ë³´ ë³´í˜¸ > ì¦ê²¨ì°¾ê¸°ì—ì„œ ìµœê·¼ì— ì‚¬ìš©ëœ íŒŒì¼ í‘œì‹œ
+Set-ItemProperty $Key ShowFrequent 0 # ì¼ë°˜ > ê°œì¸ ì •ë³´ ë³´í˜¸ > ì¦ê²¨ì°¾ê¸°ì—ì„œ ìµœê·¼ì— ì‚¬ìš©ëœ í´ë” í‘œì‹œ
+
 $Key = "HKCU:Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
-Set-ItemProperty $Key LaunchTo 1    # ÀÏ¹Ý > ÆÄÀÏ Å½»ö±â ¿­±â
-Set-ItemProperty $Key Hidden 1      # º¸±â > ¼û±è ÆÄÀÏ ¹× Æú´õ
-Set-ItemProperty $Key HideFileExt 0 # º¸±â > ¾Ë·ÁÁø ÆÄÀÏ Çü½ÄÀÇ ÆÄÀÏ È®Àå¸í ¼û±â±â
+Set-ItemProperty $Key LaunchTo 1    # ì¼ë°˜ > íŒŒì¼ íƒìƒ‰ê¸° ì—´ê¸°
+Set-ItemProperty $Key Hidden 1      # ë³´ê¸° > ìˆ¨ê¹€ íŒŒì¼ ë° í´ë”
+Set-ItemProperty $Key HideFileExt 0 # ë³´ê¸° > ì•Œë ¤ì§„ íŒŒì¼ í˜•ì‹ì˜ íŒŒì¼ í™•ìž¥ëª… ìˆ¨ê¸°ê¸°
 
 # ---- Taskar ----
 $Key = "HKCU:SOFTWARE\Microsoft\Windows\CurrentVersion\Search"
-Set-ItemProperty $Key SearchboxTaskbarMode 0 # ÀÛ¾÷ Ç¥½ÃÁÙ > °Ë»ö > ¼û±è
+Set-ItemProperty $Key SearchboxTaskbarMode 0 # ìž‘ì—… í‘œì‹œì¤„ > ê²€ìƒ‰ > ìˆ¨ê¹€
 
 # ---- Install Chocolatey ----
 if ($choco = Get-Command choco -ErrorAction SilentlyContinue) {

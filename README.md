@@ -8,6 +8,14 @@ Evan's Windows Development Environment
 
 ## Explorer
 ```
+HKCU:Software\Microsoft\Windows\CurrentVersion\Explorer
+```
+|Key|Value|Desc|
+|-|-|-|
+|ShowRecent|0|일반 > 개인 정보 보호 > 즐겨찾기에서 최근에 사용된 파일 표시|
+|ShowFrequent|0|일반 > 개인 정보 보호 > 즐겨찾기에서 최근에 사용된 폴더 표시|
+
+```
 HKCU:Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
 ```
 |Key|Value|Desc|
