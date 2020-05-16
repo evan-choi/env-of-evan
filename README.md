@@ -60,6 +60,7 @@ HKCU:Console
 
 ### Other tools
 - [goodbyedpi](https://chocolatey.org/packages/goodbyedpi)
+- [teamviewer](https://chocolatey.org/packages/teamviewer)
 - [potplayer](https://chocolatey.org/packages/potplayer)
 - [sharex](https://chocolatey.org/packages/sharex)
 - [qbittorrent](https://chocolatey.org/packages/qbittorrent)
