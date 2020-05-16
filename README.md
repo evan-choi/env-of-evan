@@ -59,6 +59,7 @@ HKCU:Console
 - [docker-desktop](https://chocolatey.org/packages/docker)
 
 ### Other tools
+- [goodbyedpi](https://chocolatey.org/packages/goodbyedpi)
 - [potplayer](https://chocolatey.org/packages/potplayer)
 - [sharex](https://chocolatey.org/packages/sharex)
 - [qbittorrent](https://chocolatey.org/packages/qbittorrent)
