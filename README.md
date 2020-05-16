@@ -1,6 +1,9 @@
 # env-of-evan
 Evan's Windows Development Environment
 
+# Rquirements
+ - Windows 10
+
 # Registry
 
 ## Explorer
