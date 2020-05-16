@@ -33,10 +33,14 @@ Function PSGallery-Install {
 }
 
 # ---- Explorer ----
-$Key = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
+$Key = "HKCU:Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
 Set-ItemProperty $Key LaunchTo 1    # 일반 > 파일 탐색기 열기
 Set-ItemProperty $Key Hidden 1      # 보기 > 숨김 파일 및 폴더
 Set-ItemProperty $Key HideFileExt 0 # 보기 > 알려진 파일 형식의 파일 확장명 숨기기
+
+# ---- Taskar ----
+$Key = "HKCU:SOFTWARE\Microsoft\Windows\CurrentVersion\Search"
+Set-ItemProperty $Key SearchboxTaskbarMode 0 # 작업 표시줄 > 검색 > 숨김
 
 # ---- Install Chocolatey ----
 if ($choco = Get-Command choco -ErrorAction SilentlyContinue) {
