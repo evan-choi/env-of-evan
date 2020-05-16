@@ -5,8 +5,14 @@ Function AppxPackage-Uninstall {
         [Parameter(Mandatory=$true)][string] $Package
     )
 
-    Write-Host "[Appx] Uninstall $Package.." -f Yellow
-    Get-AppxPackage $Package | Remove-AppxPackage
+    $AppxPackage = Get-AppxPackage $Package
+
+    if ($AppxPackage -eq $null) {
+        Write-Host "[Appx] $Package is not installed." -f DarkYellow
+    } else {
+        Write-Host "[Appx] Uninstall $Package.." -f Yellow
+        Remove-AppxPackage $AppxPackage
+    }
 }
 
 Function Choco-Install {
@@ -65,7 +71,7 @@ $Apps = @(
 ForEach ($App in $Apps) {
     AppxPackage-Uninstall $App
 }
-
+exit
 # ---- Explorer ----
 $Key = "HKCU:Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
 Set-ItemProperty $Key LaunchTo 1    # 일반 > 파일 탐색기 열기
