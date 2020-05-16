@@ -5,13 +5,21 @@ Evan's Windows Development Environment
 
 ## Explorer
 ```
-HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
+HKCU:Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
 ```
 |Key|Value|Desc|
 |-|-|-|
 |LaunchTo|1|일반 > 파일 탐색기 열기|
 |Hidden|1|보기 > 숨김 파일 및 폴더|
 |HideFileExt|0|보기 > 알려진 파일 형식의 파일 확장명 숨기기|
+
+## Taskbar
+```
+HKCU:SOFTWARE\Microsoft\Windows\CurrentVersion\Search
+```
+|Key|Value|Desc|
+|-|-|-|
+|SearchboxTaskbarMode|0|작업 표시줄 > 검색 > 숨김|
 
 ## Console
 ```
