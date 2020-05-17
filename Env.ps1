@@ -169,6 +169,9 @@ Choco-Install qbittorrent
 ## Steam
 Choco-Install steam
 
+## Discord
+Choco-Install discord
+
 ## Microsoft Teams
 Choco-Install microsoft-teams
 
