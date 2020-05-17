@@ -55,6 +55,7 @@ HKCU:Console
 ### Default tools
 - [Google Chrome](https://chocolatey.org/packages/googlechrome)
 - [BandiZip](https://chocolatey.org/packages/bandizip)
+- [꿀뷰](https://chocolatey.org/packages/honeyview)
 
 ### Developer tools
 - [git](https://chocolatey.org/packages/git)

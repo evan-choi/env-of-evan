@@ -8,9 +8,9 @@ Function AppxPackage-Uninstall {
     $AppxPackage = Get-AppxPackage $Package
 
     if ($AppxPackage -eq $null) {
-        Write-Host "[Appx] $Package is not installed." -f DarkYellow
+        Write-Host "[Appx] $Package is not installed." -f DarkGray
     } else {
-        Write-Host "[Appx] Uninstall $Package.." -f Yellow
+        Write-Host "[Appx] Uninstall $Package.." -f Cyan
         Remove-AppxPackage $AppxPackage
     }
 }
@@ -40,7 +40,7 @@ Function PSGallery-Install {
     }
 
     if (Get-Module -ListAvailable -Name $Package) {
-        Write-Host "[PS] $Package is already installed." -f DarkCyan
+        Write-Host "[PS] $Package is already installed." -f DarkGray
     } else {
         Write-Host "[PS] Install $Package.." -f Cyan
         Install-Module $Package -Scope CurrentUser -Repository PSGallery
@@ -49,24 +49,35 @@ Function PSGallery-Install {
 
 # ---- Remove Built-in applications ----
 $Apps = @(
-    "*3dbuilder*",           # 3D Builder
-    "*3dviewer*",            # 3D Viewer
-    "*windowscamera*"        # Camera
-    "*officehub*",           # Get Office
-    "*skypeapp*",            # Get Skype
-    "*getstarted*",          # Get Started
-    "*windowsmaps*",         # Maps
-    "*solitairecollection*", # Microsoft Solitaire Collection
-    "*bingfinance*",         # Money
-    "*zunevideo*",           # Movies & TV
-    "*bingnews*",            # News
-    "*onenote*",             # OneNote
-    "*people*",              # People
-    "*windowsphone*",        # Phone Companion
-    "*photos*",              # Photos
-    "*bingsports*",          # Sports
-    "*bingweather*",         # Weather
-    "*xboxapp*"              # Xbox
+    "Microsoft.MixedReality.Portal",
+    "Microsoft.ScreenSketch",
+    "Microsoft.MSPaint",
+    "Microsoft.Print3D",
+    "Microsoft.MicrosoftStickyNotes",
+    "Microsoft.OneConnect",
+    "Microsoft.Wallet",
+    "Microsoft.3DBuilder",
+    "Microsoft.Microsoft3DViewer",
+    "Microsoft.WindowsCamera"
+    "Microsoft.MicrosoftOfficeHub",
+    "Microsoft.SkypeApp",
+    "Microsoft.Getstarted",
+    "Microsoft.WindowsFeedbackHub",
+    "Microsoft.WindowsMaps",
+    "Microsoft.MicrosoftSolitaireCollection",
+    "Microsoft.ZuneVideo",
+    "Microsoft.Office.OneNote",
+    "Microsoft.People",
+    "Microsoft.Windows.Photos",
+    "Microsoft.BingWeather",
+    "Microsoft.BingNews",
+    "Microsoft.Xbox.TCUI",
+    "Microsoft.XboxApp",
+    "Microsoft.XboxGameOverlay",
+    "Microsoft.XboxGamingOverlay",
+    "Microsoft.XboxIdentityProvider",
+    "Microsoft.XboxSpeechToTextOverlay",
+    "Microsoft.XboxGameCallableUI"
 )
 
 ForEach ($App in $Apps) {
