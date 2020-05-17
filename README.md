@@ -74,6 +74,7 @@ HKCU:Console
 - [ShareX](https://chocolatey.org/packages/sharex)
 - [qBittorrent](https://chocolatey.org/packages/qbittorrent)
 - [Steam](https://chocolatey.org/packages/steam)
+- [Discord](https://chocolatey.org/packages/discord)
 - [Microsoft Teams](https://chocolatey.org/packages/microsoft)
 - [Zoom](https://chocolatey.org/packages/zoom)
 
